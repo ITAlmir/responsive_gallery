@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: gray;
+            margin: 3%;  
+            font-size: 18px;
+        }
+        @media screen and (max-width: 20048px) {
+            #grid{
+                grid-template-rows: repeat(2, 1fr);    
+            }
+        }
+        @media screen and (max-width: 768px) {
+            #grid{
+                grid-template-rows: repeat(4, 1fr);
+                font-size: 17px; 
+            }
+        }
+        @media screen and (max-width: 414px) {
+            #grid{
+                grid-template-rows: repeat(10, 1fr); 
+                font-size: 16px;   
+            }
+        }
+        #grid{
+            display: grid;
+            grid-auto-flow: column;
+            column-gap: 80px;
+            row-gap: 80px; 
+        }
+        #grid>div{
+            height: 100%;
+            width: 100%;
+            min-height: 120px;
+            text-align: center;
+            font-size: 14px;
+            border: 1px solid rgb(223, 223, 223);
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            background-color: beige;
+        }
+        #grid img{
+            background-color: rgb(88, 88, 247);
+            height: 80%;
+            width: 100%;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .footer{
+            margin-top: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+    <h1>Gallery Heading</h1>
+    </div>
+    <div id="grid">
+        <div><img src="placeholder-image.png" alt="thumb"/>image title</div>
+        <div><img src="placeholder-image.png" alt="thumb"/>image title</div>
+        <div><img src="placeholder-image.png" alt="thumb"/>image title</div>
+        <div><img src="placeholder-image.png" alt="thumb"/>image title</div>
+        <div><img src="placeholder-image.png" alt="thumb"/>image title</div>
+        <div><img src="placeholder-image.png" alt="thumb"/>image title</div>
+        <div><img src="placeholder-image.png" alt="thumb"/>image title</div>
+        <div><img src="placeholder-image.png" alt="thumb"/>image title</div>
+        <div><img src="placeholder-image.png" alt="thumb"/>image title</div>
+        <div><img src="placeholder-image.png" alt="thumb"/>image title</div>
+    </div>
+    <div class="footer">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+             invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. 
+              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+              invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
+              accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+              sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum.                
+        </p>
+    </div>
+  </div>
+</body>
+</html>
